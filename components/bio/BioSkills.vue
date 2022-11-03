@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <h1>Skills</h1>
+
+    <div :class="$style.list">
+      <SkillsCard
+        :title="skill.title"
+        :level="skill.level"
+        :description="skill.description ?? ''"
+        :key="skill.title"
+        v-for="skill in skills"
+      >
+        <img :src="skill.icon" width="48" height="48" />
+      </SkillsCard>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { skills } from "~~/constants/skills";
+</script>
+
+<style lang="scss" module>
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+}
+</style>
