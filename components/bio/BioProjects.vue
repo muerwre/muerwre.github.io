@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.projects">
-    <h2>Projects</h2>
+    <h2>Pet Projects</h2>
 
     <div :class="$style.grid">
       <BioProjectCard
