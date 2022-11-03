@@ -21,15 +21,15 @@
 
       <div :class="$style.buttons">
         <UiActionButton :href="source" variant="outline" _target="blank">
-          View Code
+          Source Code
 
-          <template v-slot:prefix>
+          <template v-slot:suffix>
             <IconsCode width="22" height="22" fill="currentColor" />
           </template>
         </UiActionButton>
 
-        <UiActionButton :href="url" variant="primary" _target="blank">
-          Visit Page
+        <UiActionButton :href="url" variant="outline" _target="blank">
+          Visit
           <template v-slot:suffix>
             <IconsArrowRight width="22" height="22" fill="currentColor" />
           </template>
