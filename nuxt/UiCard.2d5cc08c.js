@@ -1,1 +1,0 @@
-import{k as e,o as a,e as o,r as t,h as r,a3 as c}from"./entry.418f6f87.js";const l={};function n(s,d){return a(),o("div",{class:r([s.$style.card,s.$attrs.class])},[t(s.$slots,"default")],2)}const _={$style:c},u=e(l,[["render",n],["__cssModules",_]]);export{u as default};
