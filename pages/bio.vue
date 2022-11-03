@@ -1,6 +1,6 @@
 <template>
   <article :class="$style.content">
-    <section :class="$style.section">
+    <section :class="[$style.section, $style.heading]">
       <BioHeading />
     </section>
 
@@ -16,14 +16,13 @@ definePageMeta({ layout: "content" });
 
 <style lang="scss" module>
 .content {
-  padding: 40px 0 0 0;
 }
 
 .section {
   padding: 40px 0;
 
-  &:not(:last-child) {
-    border-bottom: 2px solid var(--color-line);
+  &.heading {
+    padding-bottom: 0;
   }
 }
 </style>

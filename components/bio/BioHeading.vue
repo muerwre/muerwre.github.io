@@ -16,11 +16,6 @@
         numerous other frameworks for the most of my time, but I'm also capable
         of doing <b>Typescript</b> and <b>Golang</b> backend.
       </p>
-
-      <p>
-        I've started coding more than 15 years ago as a hobby and still love
-        doing that on my work and free time.
-      </p>
     </div>
   </section>
 </template>

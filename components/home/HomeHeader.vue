@@ -41,7 +41,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 14fr 10fr;
+  grid-template-columns: 17fr 10fr;
   column-gap: 50px;
   border-bottom: 2px solid var(--color-line);
 
@@ -93,6 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 500px;
 
   @include tablet {
     text-align: center;
