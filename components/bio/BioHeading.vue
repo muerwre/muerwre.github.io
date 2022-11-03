@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.grid">
+  <div :class="$style.grid">
     <div>
       <img src="~/assets/svg/howdy.svg" />
     </div>
@@ -17,7 +17,7 @@
         of doing <b>Typescript</b> and <b>Golang</b> backend.
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts" setup></script>

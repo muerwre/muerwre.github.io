@@ -7,6 +7,10 @@
     <section :class="$style.section">
       <BioSkills />
     </section>
+
+    <section :class="$style.section">
+      <BioProjects />
+    </section>
   </article>
 </template>
 

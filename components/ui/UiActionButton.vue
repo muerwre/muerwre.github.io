@@ -30,7 +30,7 @@
 interface Props {
   href: string;
   size?: "md";
-  variant?: "outline";
+  variant?: "outline" | "text" | "primary";
 }
 
 withDefaults(defineProps<Props>(), {
@@ -44,11 +44,15 @@ withDefaults(defineProps<Props>(), {
   color: white;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.variant-primary {
+    background-color: var(--color-primary);
+  }
 
   &.variant-outline {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: var(--color-text) 0 0 0 1px;
     color: var(--color-text);
     overflow: hidden;
@@ -68,7 +72,6 @@ withDefaults(defineProps<Props>(), {
     }
 
     &:hover {
-      color: var(--color-background);
       box-shadow: var(--color-background) 0 0 0 1px;
 
       &::after {
@@ -96,6 +99,8 @@ withDefaults(defineProps<Props>(), {
 .title {
   z-index: 1;
   position: relative;
+  flex: 1;
+  text-align: center;
 
   .size-md.prefixed & {
     padding-left: 10px;

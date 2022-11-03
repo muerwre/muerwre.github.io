@@ -1,16 +1,4 @@
-import ReactLogo from "@/assets/svg/react-logo.svg";
-import ReactNativeLogo from "@/assets/svg/react-native-logo.svg";
-import ReactSSR from "@/assets/svg/react-ssr-logo.svg";
-import TsLogo from "@/assets/svg/ts-logo.svg";
-import GoLangLogo from "@/assets/svg/golang-logo.svg";
-import HTMLLogo from "@/assets/svg/html-logo.svg";
-import SVGLogo from "@/assets/svg/svg-logo.svg";
-import ArchLogo from "@/assets/svg/arch-logo.svg";
-import GQLLogo from "@/assets/svg/gql-logo.svg";
-import SwaggerLogo from "@/assets/svg/swagger-logo.svg";
-import VueLogo from "@/assets/svg/vue-logo.svg";
-import PostgresLogo from "@/assets/svg/postgres-logo.svg";
-import DockerLogo from "@/assets/svg/docker-logo.svg";
+import { Technology, technologyIcons, technologyTitles } from "./technologies";
 
 interface Skill {
   title: string;
@@ -21,80 +9,80 @@ interface Skill {
 
 export const skills: Skill[] = [
   {
-    title: "React",
+    title: technologyTitles[Technology.React],
     description: "Classes and FC-s, hooks, context, redux, redux-saga, mobx",
     level: 5,
-    icon: ReactLogo,
+    icon: technologyIcons[Technology.React],
   },
   {
-    title: "Typescript",
+    title: technologyTitles[Technology.ReactNative],
     description:
       "For both frontend and backend development: generics, guards, infers",
     level: 4,
-    icon: TsLogo,
+    icon: technologyIcons[Technology.Ts],
   },
   {
-    title: "SSR (Next, Gatsby)",
+    title: technologyTitles[Technology.ReactSSR],
     description: `Automated generation, incremental, static, and dynamic rendering`,
     level: 4,
-    icon: ReactSSR,
+    icon: technologyIcons[Technology.ReactSSR],
   },
   {
-    title: "Vue.js & Nuxt",
+    title: technologyTitles[Technology.Ts],
     description: `Common SPA-s and SSR blogs like this one, with composition API, and Vuex`,
     level: 3,
-    icon: VueLogo,
+    icon: technologyIcons[Technology.Vue],
   },
   {
-    title: "React Native",
+    title: technologyTitles[Technology.GoLang],
     description: `Basic developing and releasing experience without native modules`,
     level: 3,
-    icon: ReactNativeLogo,
+    icon: technologyIcons[Technology.ReactNative],
   },
   {
-    title: "Golang",
+    title: technologyTitles[Technology.HTML],
     description: "Monolith and microservice apps with REST, GraphQL, and GRPC",
     level: 2,
-    icon: GoLangLogo,
+    icon: technologyIcons[Technology.GoLang],
   },
   {
-    title: "Docker",
+    title: technologyTitles[Technology.Arch],
     description:
       "Docker, docker-compose, private registries, gitlab-ci, and drone-ci",
     level: 4,
-    icon: DockerLogo as string,
+    icon: technologyIcons[Technology.Docker],
   },
   {
-    title: "HTML, CSS, SVG",
+    title: technologyTitles[Technology.GQL],
     description:
       "Adaptive markup, all modern techniques, preprocessors, and CSS-in-JS",
     level: 5,
-    icon: HTMLLogo,
+    icon: technologyIcons[Technology.HTML],
   },
   {
-    title: "Linux Shell",
+    title: technologyTitles[Technology.Swagger],
     description:
       "Linux user since 2003, can write scripts to automate my work. BTW, I use Arch!",
     level: 4,
-    icon: ArchLogo as string,
+    icon: technologyIcons[Technology.Arch],
   },
   {
-    title: "GraphQL",
+    title: technologyTitles[Technology.Vue],
     description:
       "Both server- and client-side. Queries, mutations, cache manipulation",
     level: 4,
-    icon: GQLLogo as string,
+    icon: technologyIcons[Technology.GQL],
   },
   {
-    title: "REST API",
+    title: technologyTitles[Technology.Postgres],
     description: "With Axios, fetch, express, gorilla-mux, and gin-gonic",
     level: 4,
-    icon: SwaggerLogo as string,
+    icon: technologyIcons[Technology.Swagger],
   },
   {
-    title: "SQL",
+    title: technologyTitles[Technology.Docker],
     description: "Base queries, JOIN-s, indexes and simpl query optimizations",
     level: 2,
-    icon: PostgresLogo as string,
+    icon: technologyIcons[Technology.Postgres],
   },
 ];

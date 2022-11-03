@@ -3,7 +3,7 @@
     <h2>Skills</h2>
 
     <div :class="$style.list">
-      <SkillsCard
+      <BioSkillsCard
         :title="skill.title"
         :level="skill.level"
         :description="skill.description ?? ''"
@@ -11,7 +11,7 @@
         v-for="skill in skills"
       >
         <img :src="skill.icon" width="48" height="48" />
-      </SkillsCard>
+      </BioSkillsCard>
     </div>
   </div>
 </template>
