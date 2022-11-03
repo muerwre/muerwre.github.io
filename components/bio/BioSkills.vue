@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Skills</h1>
+    <h2>Skills</h2>
 
     <div :class="$style.list">
       <SkillsCard
