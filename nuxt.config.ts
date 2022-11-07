@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   content: {
-    navigation: {
-      fields: ["blblblb"],
-    },
     highlight: {
       theme: {
         default: "github-dark",
