@@ -56,10 +56,6 @@
   @include desktop {
     border-bottom: 2px solid var(--color-line);
     justify-content: center;
-
-    .desk {
-      max-width: 400px;
-    }
   }
 }
 
@@ -69,7 +65,7 @@
   margin: 0.8rem 0;
 
   @include phone {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 3rem;
   }
 }
@@ -92,12 +88,14 @@
 
   @include tablet {
     text-align: center;
+    width: 100%;
+    max-width: 100%;
     padding-top: 0;
     padding-bottom: 40px;
   }
 }
 .desk {
-  max-width: 100%;
+  max-width: 80vw;
 
   @include desktop {
     max-height: 50vh;

@@ -21,6 +21,17 @@
         <UiActionButton
           href="https://github.com/muerwre"
           target="_blank"
+          variant="primary"
+        >
+          Contact me
+          <template v-slot:suffix>
+            <IconsArrowRight width="22" height="22" fill="currentColor" />
+          </template>
+        </UiActionButton>
+
+        <UiActionButton
+          href="https://github.com/muerwre"
+          target="_blank"
           variant="outline"
         >
           Visit my Github
@@ -84,6 +95,10 @@
 
   @include desktop {
     margin-top: 20px;
+  }
+
+  & > * {
+    margin: 0 15px 15px 0;
   }
 }
 </style>
