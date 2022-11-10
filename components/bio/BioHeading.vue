@@ -36,7 +36,7 @@
         >
           Visit my Github
           <template v-slot:suffix>
-            <IconsArrowRight width="22" height="22" fill="currentColor" />
+            <IconsCode width="22" height="22" fill="currentColor" />
           </template>
         </UiActionButton>
       </div>
@@ -52,7 +52,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-column-gap: 40px;
+  grid-column-gap: 80px;
 
   @include desktop {
     display: flex;

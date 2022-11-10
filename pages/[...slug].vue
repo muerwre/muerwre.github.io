@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main :class="$style.content">
     <ContentDoc>
       <template v-slot="{ doc }">
         <h1>{{ doc.title }}</h1>
@@ -28,3 +28,11 @@ export default {
   scrollToTop: true,
 };
 </script>
+
+<style lang="scss" module>
+@import "@/assets/css/mixins";
+
+.content {
+  @include container;
+}
+</style>

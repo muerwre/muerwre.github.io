@@ -14,7 +14,16 @@
   </article>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
+export default {
+  scrollToTop: true,
+  head() {
+    return {
+      title: "About Me",
+    };
+  },
+};
+
 definePageMeta({ layout: "landing" });
 </script>
 

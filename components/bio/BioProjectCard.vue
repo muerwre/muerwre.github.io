@@ -21,7 +21,7 @@
 
       <div :class="$style.buttons">
         <UiActionButton :href="source" variant="outline" _target="blank">
-          Source Code
+          Code
 
           <template v-slot:suffix>
             <IconsCode width="22" height="22" fill="currentColor" />

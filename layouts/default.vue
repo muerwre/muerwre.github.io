@@ -95,8 +95,6 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  @include container;
 }
 
 .sidebar {
@@ -170,6 +168,10 @@ export default defineComponent({
 
 .content {
   width: 100%;
-  padding-top: 40px;
+  height: 100%;
+
+  @include tablet {
+    padding-top: 40px;
+  }
 }
 </style>
