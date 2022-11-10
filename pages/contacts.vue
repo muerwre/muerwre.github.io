@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div :class="$style.text">
+      <div :class="$style.image">
         <img src="@/assets/svg/writing.svg" alt="" />
       </div>
     </div>
@@ -49,7 +49,7 @@ definePageMeta({ layout: "landing" });
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 80px;
 
-  @include desktop {
+  @include tablet {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -61,5 +61,11 @@ definePageMeta({ layout: "landing" });
 
 .title {
   margin-bottom: 10px;
+}
+
+.image {
+  @include tablet {
+    display: none;
+  }
 }
 </style>
