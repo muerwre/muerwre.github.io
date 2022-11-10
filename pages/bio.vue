@@ -36,6 +36,7 @@ definePageMeta({ layout: "landing" });
 .heading {
   @include desktop {
     padding-top: 0;
+    padding-top: 20px;
   }
 }
 </style>

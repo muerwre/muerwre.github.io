@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@400;700&display=swap");
 @import "./variables";
+@import "./mixins";
 @import "./transitions.scss";
 
 body,
@@ -62,6 +63,11 @@ h1 {
 
   &:not(:first-child) {
     margin-top: 3rem;
+  }
+
+  @include phone {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
 }
 

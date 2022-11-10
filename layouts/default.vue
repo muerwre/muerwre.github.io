@@ -19,9 +19,11 @@
     </div>
 
     <div :class="$style.main">
-      <NuxtLayout name="content">
-        <slot />
-      </NuxtLayout>
+      <div :class="$style.content">
+        <NuxtLayout name="content">
+          <slot />
+        </NuxtLayout>
+      </div>
     </div>
   </div>
 </template>
@@ -164,5 +166,10 @@ export default defineComponent({
 
 .footer {
   margin-top: 40px;
+}
+
+.content {
+  width: 100%;
+  padding-top: 40px;
 }
 </style>

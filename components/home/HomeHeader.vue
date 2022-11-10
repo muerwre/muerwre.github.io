@@ -60,14 +60,7 @@
 }
 
 .title {
-  font-size: 3rem;
-  line-height: 3.4rem;
   margin: 0.8rem 0;
-
-  @include phone {
-    font-size: 2.2rem;
-    line-height: 3rem;
-  }
 }
 
 .subtitle {
