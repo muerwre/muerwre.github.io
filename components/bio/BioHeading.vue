@@ -32,7 +32,7 @@
         >
           Visit my Github
           <template v-slot:suffix>
-            <IconsCode width="22" height="22" fill="currentColor" />
+            <IconsGithub width="22" height="22" fill="currentColor" />
           </template>
         </UiActionButton>
       </UiButtonGroup>
