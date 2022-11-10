@@ -22,14 +22,21 @@
           <p>There's also my Curriculum Vitae and contact info.</p>
         </div>
 
-        <div :class="$style.buttons">
-          <UiActionButton href="/bio" variant="outline">
-            Read about me
+        <UiButtonGroup :class="$style.buttons">
+          <UiActionButton href="/contacts" variant="primary">
+            Contact me
             <template v-slot:suffix>
-              <IconsArrowRight width="22" height="22" fill="currentColor" />
+              <IconsSend width="22" height="22" fill="currentColor" />
             </template>
           </UiActionButton>
-        </div>
+
+          <UiActionButton href="/about" variant="outline">
+            View Portfolio
+            <template v-slot:suffix>
+              <IconsBook width="22" height="22" fill="currentColor" />
+            </template>
+          </UiActionButton>
+        </UiButtonGroup>
       </div>
 
       <div :class="$style.image">

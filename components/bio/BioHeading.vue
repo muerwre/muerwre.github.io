@@ -17,15 +17,11 @@
         of doing <b>Typescript</b> and <b>Golang</b> backend.
       </p>
 
-      <div :class="$style.buttons">
-        <UiActionButton
-          href="https://github.com/muerwre"
-          target="_blank"
-          variant="primary"
-        >
+      <UiButtonGroup :class="$style.buttons">
+        <UiActionButton href="/contacts" variant="primary">
           Contact me
           <template v-slot:suffix>
-            <IconsArrowRight width="22" height="22" fill="currentColor" />
+            <IconsSend width="22" height="22" fill="currentColor" />
           </template>
         </UiActionButton>
 
@@ -39,7 +35,7 @@
             <IconsCode width="22" height="22" fill="currentColor" />
           </template>
         </UiActionButton>
-      </div>
+      </UiButtonGroup>
     </div>
   </div>
 </template>
@@ -95,10 +91,6 @@
 
   @include desktop {
     margin-top: 20px;
-  }
-
-  & > * {
-    margin: 0 15px 15px 0;
   }
 }
 </style>

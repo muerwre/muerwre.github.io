@@ -1,8 +1,9 @@
 <template>
-  <div :class="$style.header">
+  <header :class="$style.header">
     <NuxtLink to="/" :activeClass="$style.active">Home</NuxtLink>
-    <NuxtLink to="/bio" :activeClass="$style.active">About me</NuxtLink>
-  </div>
+    <NuxtLink to="/about" :activeClass="$style.active">About</NuxtLink>
+    <NuxtLink to="/contacts" :activeClass="$style.active">Contacts</NuxtLink>
+  </header>
 </template>
 
 <script lang="ts" setup></script>

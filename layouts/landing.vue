@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.wrapper">
     <div :class="$style.header_container">
       <div :class="$style.header_content">
         <LayoutHeader />
@@ -14,6 +14,10 @@
 
 <style lang="scss" module>
 @import "@/assets/css/mixins";
+
+.wrapper {
+  height: 100%;
+}
 
 .header_container {
   position: sticky;
