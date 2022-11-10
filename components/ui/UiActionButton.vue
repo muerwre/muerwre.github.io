@@ -73,6 +73,7 @@ withDefaults(defineProps<Props>(), {
 
     &:hover {
       box-shadow: var(--color-background) 0 0 0 1px;
+      color: var(--color-primary-contrast);
 
       &::after {
         transform: scale(1);

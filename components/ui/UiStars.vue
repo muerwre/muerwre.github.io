@@ -45,7 +45,7 @@ defineProps<Props>();
   );
 
   &.filled {
-    fill: var(--color-line);
+    fill: var(--color-rating-0);
   }
 }
 </style>

@@ -25,3 +25,9 @@
     }
   }
 }
+
+@mixin light_theme {
+  :root.light {
+    @content;
+  }
+}
