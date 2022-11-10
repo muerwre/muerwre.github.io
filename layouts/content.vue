@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+  flex: 1;
 
   @include desktop {
     padding-top: 10px;
