@@ -24,14 +24,14 @@ export default {
   },
 };
 
-definePageMeta({ layout: false });
+definePageMeta({ layout: "landing" });
 </script>
 
 <style lang="scss" module>
 @import "~~/assets/css/mixins";
 
 .main {
-  padding-top: 40px;
+  @include container;
 
   @include tablet {
     padding-top: 0;

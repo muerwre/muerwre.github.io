@@ -17,19 +17,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .content {
   flex: 1;
-  padding: 40px 120px;
-
-  @include desktop {
-    padding: 40px 40px 20px 40px;
-  }
-
-  @include tablet {
-    padding: 40px 20px 20px 20px;
-  }
 }
 
 .footer {

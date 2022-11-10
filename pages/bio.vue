@@ -19,11 +19,14 @@
 </template>
 
 <script lang="ts" setup>
-definePageMeta({ layout: "content" });
+definePageMeta({ layout: "landing" });
 </script>
 
 <style lang="scss" module>
+@import "@/assets/css/mixins";
+
 .content {
+  @include container;
 }
 
 .section {
