@@ -11,10 +11,6 @@
     <section :class="$style.section">
       <BioProjects />
     </section>
-
-    <section :class="$style.section">
-      <BioCareer />
-    </section>
   </article>
 </template>
 
@@ -34,6 +30,12 @@ definePageMeta({ layout: "landing" });
 
   &.heading {
     padding-bottom: 0;
+  }
+}
+
+.heading {
+  @include desktop {
+    padding-top: 0;
   }
 }
 </style>

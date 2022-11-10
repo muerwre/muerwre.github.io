@@ -18,6 +18,10 @@
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+
+  @include desktop {
+    padding-top: 10px;
+  }
 }
 
 .content {
@@ -36,6 +40,7 @@
   right: 20px;
   stroke: currentColor;
   stroke-width: 0.5px;
+  z-index: 12;
 
   @include tablet {
     stroke-width: 1.5px;

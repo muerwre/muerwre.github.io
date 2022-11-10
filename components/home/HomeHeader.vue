@@ -12,12 +12,8 @@
         </p>
 
         <div :class="$style.buttons">
-          <UiActionButton
-            href="https://github.com/muerwre"
-            target="_blank"
-            variant="outline"
-          >
-            Visit my Github
+          <UiActionButton href="/bio" variant="outline">
+            Read about me
             <template v-slot:suffix>
               <IconsArrowRight width="22" height="22" fill="currentColor" />
             </template>
@@ -46,7 +42,6 @@
   border-bottom: 2px solid var(--color-line);
 
   @include desktop {
-    // grid-template-columns: 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     column-gap: 20px;
@@ -102,10 +97,18 @@
   }
 }
 .desk {
-  width: 100%;
+  max-width: 100%;
+
+  @include desktop {
+    max-height: 50vh;
+  }
 }
 
 .buttons {
-  margin-top: 50px;
+  margin-top: 40px;
+
+  @include desktop {
+    margin-top: 20px;
+  }
 }
 </style>

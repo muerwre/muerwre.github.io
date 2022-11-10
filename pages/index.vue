@@ -1,17 +1,15 @@
 <template>
-  <NuxtLayout name="content">
-    <main :class="$style.main">
-      <HomeHeader />
+  <main :class="$style.main">
+    <HomeHeader />
 
-      <div :class="$style.reference">
-        <h1>Cheatsheet</h1>
+    <div :class="$style.reference">
+      <h1>Cheatsheet</h1>
 
-        <div :class="$style.grid">
-          <HomeContentList />
-        </div>
+      <div :class="$style.grid">
+        <HomeContentList />
       </div>
-    </main>
-  </NuxtLayout>
+    </div>
+  </main>
 </template>
 
 <script>
