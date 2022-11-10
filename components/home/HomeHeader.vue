@@ -24,14 +24,14 @@
 
         <UiButtonGroup :class="$style.buttons">
           <UiActionButton href="/contacts" variant="primary">
-            Contact me
+            Contact&nbsp;me
             <template v-slot:suffix>
               <IconsSend width="22" height="22" fill="currentColor" />
             </template>
           </UiActionButton>
 
           <UiActionButton href="/about" variant="outline">
-            View Portfolio
+            View&nbsp;Portfolio
             <template v-slot:suffix>
               <IconsBook width="22" height="22" fill="currentColor" />
             </template>
@@ -119,7 +119,8 @@
 .buttons {
   margin-top: 40px;
 
-  @include desktop {
+  @include tablet {
+    justify-content: center;
     margin-top: 20px;
   }
 }

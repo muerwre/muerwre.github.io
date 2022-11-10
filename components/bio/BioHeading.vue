@@ -19,7 +19,7 @@
 
       <UiButtonGroup :class="$style.buttons">
         <UiActionButton href="/contacts" variant="primary">
-          Contact me
+          Contact&nbsp;me
           <template v-slot:suffix>
             <IconsSend width="22" height="22" fill="currentColor" />
           </template>
@@ -30,7 +30,7 @@
           target="_blank"
           variant="outline"
         >
-          Visit my Github
+          Visit&nbsp;my&nbsp;Github
           <template v-slot:suffix>
             <IconsGithub width="22" height="22" fill="currentColor" />
           </template>
@@ -91,6 +91,7 @@
 
   @include desktop {
     margin-top: 20px;
+    justify-content: center;
   }
 }
 </style>
