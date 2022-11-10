@@ -2,7 +2,10 @@
   <article :class="$style.content">
     <div :class="$style.grid">
       <div :class="$style.text">
-        <h1>Write me a letter!</h1>
+        <h1 :class="$style.title">Write me a letter!</h1>
+        <div :class="$style.location">
+          <b>Current Location:</b> {{ contacts.location }}
+        </div>
 
         <div :class="$style.contacts">
           <ContactInformation />
@@ -17,7 +20,12 @@
 </template>
 
 <script lang="ts">
+import { contacts } from "~~/constants/contacts";
+
 export default {
+  data() {
+    return { contacts };
+  },
   scrollToTop: true,
   head() {
     return {
@@ -48,6 +56,10 @@ definePageMeta({ layout: "landing" });
 }
 
 .contacts {
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.title {
+  margin-bottom: 10px;
 }
 </style>

@@ -30,7 +30,7 @@ onMounted(() => (mail.value = atob(contacts.email)));
 .grid {
   width: auto;
   display: grid;
-  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
   gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
