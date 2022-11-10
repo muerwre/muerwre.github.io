@@ -4,12 +4,23 @@
       <div :class="$style.text">
         <h1 :class="$style.title">Welcome to&nbsp;my Obsidian&nbsp;Garden</h1>
 
-        <p :class="$style.subtitle">
-          <img src="~/assets/svg/obsidian.svg" alt="" width="14" height="14" />
-          <NuxtLink to="https://obsidian.md" target="_blank">Obsidian</NuxtLink>
-          is a note-taking app, that I use to store chunks of code and technical
-          documentation.
-        </p>
+        <div :class="$style.subtitle">
+          <p>
+            <img
+              src="~/assets/svg/obsidian.svg"
+              alt=""
+              width="14"
+              height="14"
+            />
+            <NuxtLink to="https://obsidian.md" target="_blank"
+              >Obsidian</NuxtLink
+            >
+            is a note-taking app, that I use to store <b>chunks of code</b> and
+            <b>technical documentation</b>. Here's the frontend for my notebook.
+          </p>
+
+          <p>There's also my Curriculum Vitae and contact info.</p>
+        </div>
 
         <div :class="$style.buttons">
           <UiActionButton href="/bio" variant="outline">
@@ -65,7 +76,7 @@
 
 .subtitle {
   color: var(--color-text-secondary);
-  max-width: 360px;
+  max-width: 600px;
 
   @include desktop {
     max-width: 100%;
@@ -77,7 +88,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 500px;
+
+  b {
+    color: var(--color-text);
+  }
 
   @include tablet {
     text-align: center;
