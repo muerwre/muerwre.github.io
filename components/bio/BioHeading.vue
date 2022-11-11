@@ -13,8 +13,8 @@
 
       <p>
         I develop frontend applications with <b>React</b>, <b>Vue</b> and
-        numerous other frameworks for the most of my time, but I'm also capable
-        of doing <b>Typescript</b> and <b>Golang</b> backend.
+        numerous other frameworks as a job and a hobby. I'm also capable of
+        doing <b>Typescript</b> and <b>Golang</b> backends.
       </p>
 
       <UiButtonGroup :class="$style.buttons">
