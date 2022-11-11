@@ -19,7 +19,7 @@
             <b>technical documentation</b>. Here's the frontend for my notebook.
           </p>
 
-          <p>There's also my Curriculum Vitae and contact info.</p>
+          <p>There's also my Curriculum Vitae and contact info here.</p>
         </div>
 
         <UiButtonGroup :class="$style.buttons">

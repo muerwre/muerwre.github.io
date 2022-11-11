@@ -14,7 +14,8 @@
       <p>
         I develop frontend applications with <b>React</b>, <b>Vue</b> and
         numerous other frameworks as a job and a hobby. I'm also capable of
-        doing <b>Typescript</b> and <b>Golang</b> backends.
+        doing <b>Typescript</b> and <b>Golang</b> backends, services, and
+        integrations.
       </p>
 
       <UiButtonGroup :class="$style.buttons">
