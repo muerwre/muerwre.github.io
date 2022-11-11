@@ -40,6 +40,10 @@ definePageMeta({ layout: "landing" });
 <style lang="scss" module>
 @import "@/assets/css/mixins";
 
+.text {
+  padding-bottom: 40px;
+}
+
 .content {
   @include container;
 }
@@ -47,9 +51,20 @@ definePageMeta({ layout: "landing" });
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-column-gap: 80px;
+  gap: 80px;
+  align-items: center;
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
   @include tablet {
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include phone {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -64,8 +79,12 @@ definePageMeta({ layout: "landing" });
 }
 
 .image {
-  @include tablet {
+  @include phone {
     display: none;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
 </style>
