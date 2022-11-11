@@ -12,8 +12,8 @@
         </div>
       </div>
 
-      <div :class="$style.image">
-        <img src="@/assets/svg/writing.svg" alt="" />
+      <div>
+        <img src="@/assets/svg/writing.svg" alt="" :class="$style.image" />
       </div>
     </div>
   </article>
@@ -42,6 +42,10 @@ definePageMeta({ layout: "landing" });
 
 .text {
   padding-bottom: 40px;
+
+  @include phone {
+    text-align: center;
+  }
 }
 
 .content {
@@ -72,6 +76,10 @@ definePageMeta({ layout: "landing" });
 
 .contacts {
   margin-top: 60px;
+
+  @include phone {
+    margin-top: 40px;
+  }
 }
 
 .title {
@@ -79,12 +87,10 @@ definePageMeta({ layout: "landing" });
 }
 
 .image {
-  @include phone {
-    display: none;
-  }
+  max-width: 100%;
 
-  img {
-    max-width: 100%;
+  @include phone {
+    max-height: 25vh;
   }
 }
 </style>

@@ -28,6 +28,7 @@ const openWindow = () => window.open(props.href);
 .row {
   cursor: pointer;
   padding: 10px 20px 10px 14px;
+  text-align: left;
 }
 
 .grid {

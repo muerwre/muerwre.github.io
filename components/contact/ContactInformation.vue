@@ -27,6 +27,8 @@ onMounted(() => (mail.value = atob(contacts.email)));
 </script>
 
 <style lang="scss" module>
+@import "@/assets/css/mixins";
+
 .grid {
   width: auto;
   display: grid;
@@ -34,5 +36,9 @@ onMounted(() => (mail.value = atob(contacts.email)));
   gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
+
+  @include phone {
+    justify-content: stretch;
+  }
 }
 </style>
