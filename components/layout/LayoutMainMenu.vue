@@ -31,7 +31,7 @@ const parentItems = navigation.value.filter(
 
 <style lang="scss" module>
 .section_title {
-  font-family: var(--family-roboto-slab);
+  font-family: var(--family-headings);
   font-weight: 600;
   margin: 2rem 0 1.5rem;
   font-size: 1.6rem;
@@ -61,7 +61,7 @@ const parentItems = navigation.value.filter(
 }
 
 .title {
-  font-family: var(--family-roboto-slab);
+  font-family: var(--family-headings);
   font-weight: 700;
   font-size: 2rem;
 }
