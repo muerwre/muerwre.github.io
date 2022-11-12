@@ -76,6 +76,7 @@ definePageMeta({ layout: "landing" });
 
 .contacts {
   margin-top: 60px;
+  max-width: 700px;
 
   @include phone {
     margin-top: 40px;
