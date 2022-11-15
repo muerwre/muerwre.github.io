@@ -12,6 +12,14 @@
       <IconsGithub :width="24" :height="24" />
     </ContactRow>
 
+    <ContactRow
+      value="Fedor Katurov"
+      :href="contacts.linkedin"
+      label="LinkedIn"
+    >
+      <IconsLinkedin :width="24" :height="24" />
+    </ContactRow>
+
     <ContactRow :value="mail" :href="`mailto:${mail}`" label="Mail">
       <IconsSend :width="24" :height="24" />
     </ContactRow>
