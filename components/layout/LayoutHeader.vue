@@ -11,7 +11,7 @@
 <style lang="scss" module>
 .header {
   text-align: left;
-  padding: 22px 0;
+  padding: 22px 0 20px;
 
   a {
     color: var(--color-text);

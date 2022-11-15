@@ -186,6 +186,15 @@ blockquote {
   --color-rating-5: #87deaa;
   --color-highlight-color: var(--color-text);
   --color-highlight-background: #254e50;
+
+  // top gradient
+  $primary_dimmed: mix(#e84a72, #16161c, 70%);
+  --top-gradient: linear-gradient(
+    90deg,
+    #{$primary_dimmed},
+    #{adjust-hue($primary_dimmed, 120deg)},
+    #{adjust-hue($primary_dimmed, 240deg)}
+  );
 }
 
 :root.light {
@@ -221,4 +230,13 @@ blockquote {
   --color-rating-5: #{adjust-hue($rating, -40deg)};
   --color-highlight-color: var(--color-text);
   --color-highlight-background: #fab795;
+
+  // top gradient
+  $primary_dimmed: mix(#e84a72, #fce9e4, 70%);
+  --top-gradient: linear-gradient(
+    90deg,
+    #{$primary_dimmed},
+    #{adjust-hue($primary_dimmed, 120deg)},
+    #{adjust-hue($primary_dimmed, 240deg)}
+  );
 }

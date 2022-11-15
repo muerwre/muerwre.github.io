@@ -28,6 +28,17 @@
   z-index: 10;
   backdrop-filter: blur(5px);
 
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--top-gradient);
+    z-index: 2;
+  }
+
   &::after {
     content: "";
     position: absolute;
