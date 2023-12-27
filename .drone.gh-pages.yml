@@ -19,8 +19,6 @@ steps:
     image: plugins/gh-pages
     settings:
       target_branch: gh-pages
-      ssh_key:
-        from_secret: global_ssh_key
       username:
         from_secret: github_username
       password:

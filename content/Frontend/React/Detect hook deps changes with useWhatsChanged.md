@@ -5,7 +5,6 @@ import { useEffect, useRef } from 'react';
  * tell you, which one changed after rerender.
  * Use `prefix` to distinguish props of different components.
  */
-// eslint-disable-next-line import/no-unused-modules
 export const useWhatsChanged = (
   props: Record<string, unknown>,
   prefix = '',
@@ -18,7 +17,6 @@ export const useWhatsChanged = (
         !Object.prototype.hasOwnProperty.call(prevProps.current, key) ||
         prevProps.current[key] !== value
       ) {
-        // eslint-disable-next-line no-console
         console.log(`${prefix} ${key} has changed`);
       }
     });
