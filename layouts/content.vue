@@ -50,3 +50,19 @@
   }
 }
 </style>
+
+<script>
+export default {
+  head() {
+    return {
+      script: [
+        {
+          src: "https://anal.vault48.org/script.js",
+          "data-website-id": "7d587423-ffda-4732-a99d-6cf60d5c9a8a",
+          async: true,
+        },
+      ],
+    };
+  },
+};
+</script>
