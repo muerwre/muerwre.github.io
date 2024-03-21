@@ -77,7 +77,7 @@ export default defineComponent({
 .grid {
   display: grid;
   grid-template-columns: 360px auto;
-  width: 100vw;
+  width: 100%;
 
   @include desktop {
     grid-template-columns: 33vw auto;

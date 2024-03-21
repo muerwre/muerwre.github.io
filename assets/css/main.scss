@@ -37,6 +37,7 @@ pre {
   overflow: scroll;
   width: 100%;
   line-height: 1.5em;
+  overflow: auto;
 }
 
 :not(pre) > code {
@@ -160,6 +161,8 @@ blockquote {
 }
 
 :root {
+  color-scheme: dark;
+
   // palette
   --color-primary: #e84a72;
   --color-primary-contrast: #ffffff;
@@ -202,6 +205,8 @@ blockquote {
 }
 
 :root.light {
+  color-scheme: light;
+
   $pinky: #{mix(#fadad1, #fce9e4, 50%)};
   $rating: #e4b882;
 
@@ -243,4 +248,7 @@ blockquote {
     #{adjust-hue($primary_dimmed, 120deg)},
     #{adjust-hue($primary_dimmed, 240deg)}
   );
+}
+
+#__nuxt {
 }
