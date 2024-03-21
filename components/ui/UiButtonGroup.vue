@@ -10,7 +10,7 @@
 @import "@/assets/css/main.scss";
 
 .buttons {
-  display: grid;
+  display: flex;
   gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
