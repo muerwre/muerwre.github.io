@@ -1,0 +1,47 @@
+@import "./variables";
+
+@mixin phone {
+  @media (max-width: $size-phone) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $size-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $size-desktop) {
+    @content;
+  }
+}
+
+@mixin color-per-child($colors) {
+  @each $color in $colors {
+    &:nth-child(#{index(($colors), ($color))}) {
+      color: $color;
+    }
+  }
+}
+
+@mixin light_theme {
+  :root.light {
+    @content;
+  }
+}
+
+@mixin container {
+  max-width: min(1280px, 100vw);
+  margin: auto;
+  padding: 0 40px;
+
+  @include desktop {
+    padding: 0 40px;
+  }
+
+  @include tablet {
+    padding: 0 20px;
+  }
+}
